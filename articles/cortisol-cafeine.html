@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortisol et Caféine — Raphaël Bousbia</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
 
+    <nav>
+        <a href="../index.html" class="nav-brand">Raphaël Bousbia</a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../articles.html" class="active">Articles</a></li>
+            <li><a href="../locations.html">Parcours</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="article-header">
+        <span class="article-date">29 avril 2026 &mdash; Recherche</span>
+        <h1>Cortisol et Caféine : ce que dit vraiment la science</h1>
+        <p class="article-intro">Faut-il attendre 90 minutes avant son premier café ? La réponse populaire et la réponse scientifique divergent considérablement.</p>
+    </header>
+
+    <article class="article-body">
+
+        <h2>La courbe diurne du cortisol</h2>
+
+        <p>Le cortisol n'est pas une hormone statique. Il suit un rythme circadien précis, piloté par le noyau suprachiasmatique de l'hypothalamus, qui programme une montée progressive dès 3 h du matin, un pic atteint 30 à 45 minutes après le réveil habituel, puis une décroissance qui durera tout le reste de la journée.</p>
+
+        <div class="article-figure">
+            <svg viewBox="0 0 580 260" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="580" height="260" fill="#f8f7f5" rx="6"/>
+
+                <!-- Horizontal grid lines -->
+                <line x1="55" y1="220" x2="560" y2="220" stroke="#e8e6e3" stroke-width="1"/>
+                <line x1="55" y1="175" x2="560" y2="175" stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="55" y1="129" x2="560" y2="129" stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="55" y1="84"  x2="560" y2="84"  stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="55" y1="38"  x2="560" y2="38"  stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+
+                <!-- Vertical grid lines -->
+                <line x1="55"  y1="20" x2="55"  y2="220" stroke="#e8e6e3" stroke-width="1"/>
+                <line x1="181" y1="20" x2="181" y2="220" stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="308" y1="20" x2="308" y2="220" stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="434" y1="20" x2="434" y2="220" stroke="#e8e6e3" stroke-width="1" stroke-dasharray="3,3"/>
+                <line x1="560" y1="20" x2="560" y2="220" stroke="#e8e6e3" stroke-width="1"/>
+
+                <!-- Wake time dashed line (7h → x ≈ 202) -->
+                <line x1="202" y1="20" x2="202" y2="220" stroke="#1c3d5a" stroke-width="1" stroke-dasharray="4,3" opacity="0.35"/>
+
+                <!-- Area fill under curve -->
+                <path d="M 55,193 C 78,195 102,200 122,196 C 142,192 152,179 164,168 C 174,158 184,138 194,120 C 197,112 200,106 202,98 C 205,84 209,63 215,50 C 219,41 221,49 225,62 C 231,80 244,104 262,120 C 280,136 296,146 310,149 C 332,152 355,162 374,169 C 398,178 420,183 440,186 C 460,188 480,191 500,193 C 520,195 542,196 560,197 L 560,220 L 55,220 Z"
+                      fill="#1c3d5a" opacity="0.07"/>
+
+                <!-- Cortisol curve -->
+                <path d="M 55,193 C 78,195 102,200 122,196 C 142,192 152,179 164,168 C 174,158 184,138 194,120 C 197,112 200,106 202,98 C 205,84 209,63 215,50 C 219,41 221,49 225,62 C 231,80 244,104 262,120 C 280,136 296,146 310,149 C 332,152 355,162 374,169 C 398,178 420,183 440,186 C 460,188 480,191 500,193 C 520,195 542,196 560,197"
+                      fill="none" stroke="#1c3d5a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+                <!-- CAR peak dot -->
+                <circle cx="215" cy="50" r="3.5" fill="#1c3d5a"/>
+
+                <!-- X axis labels -->
+                <text x="55"  y="238" text-anchor="middle" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">0h</text>
+                <text x="181" y="238" text-anchor="middle" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">6h</text>
+                <text x="308" y="238" text-anchor="middle" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">12h</text>
+                <text x="434" y="238" text-anchor="middle" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">18h</text>
+                <text x="560" y="238" text-anchor="middle" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">24h</text>
+
+                <!-- Y axis labels -->
+                <text x="48" y="224" text-anchor="end" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">0</text>
+                <text x="48" y="179" text-anchor="end" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">5</text>
+                <text x="48" y="133" text-anchor="end" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">10</text>
+                <text x="48" y="88"  text-anchor="end" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">15</text>
+                <text x="48" y="42"  text-anchor="end" font-size="11" fill="#999999" font-family="-apple-system,sans-serif">20</text>
+                <text x="12" y="130" text-anchor="middle" font-size="10" fill="#999999" font-family="-apple-system,sans-serif" transform="rotate(-90,12,130)">ng/mL</text>
+
+                <!-- Wake label -->
+                <text x="202" y="15" text-anchor="middle" font-size="10" fill="#1c3d5a" font-family="-apple-system,sans-serif" opacity="0.65">Réveil</text>
+
+                <!-- CAR label -->
+                <text x="224" y="46" text-anchor="start" font-size="10" fill="#1c3d5a" font-family="-apple-system,sans-serif" font-weight="500">CAR</text>
+            </svg>
+        </div>
+        <p class="figure-caption">Figure 1. Courbe diurne normale du cortisol (ng/mL) sur 24 heures. Source : données normatives de la littérature endocrinologique.</p>
+
+        <p><strong>Le matin.</strong> Le taux de cortisol est à son niveau le plus élevé tôt le matin. C'est ce que l'on appelle la « réaction d'éveil du cortisol » (Cortisol Awakening Response, ou CAR) : une élévation de 38 à 75 % surimposée au rythme circadien de base, qui fournit à l'organisme l'énergie nécessaire pour démarrer la journée (Stalder et al., <em>Psychoneuroendocrinology</em>, 2016).</p>
+
+        <p><strong>Pendant la journée.</strong> Le taux de cortisol diminue progressivement au fil des heures, mais il peut remonter légèrement en réponse à des facteurs de stress ou à l'activité physique. Ces oscillations ultradiennes, d'environ 90 minutes, ponctuent la descente générale.</p>
+
+        <p><strong>Le soir.</strong> Le taux continue de baisser, atteignant son niveau le plus bas en début de nuit. Cette chute fait partie de la préparation de l'organisme au sommeil.</p>
+
+        <p><strong>La nuit.</strong> Le cortisol reste bas pour faciliter la récupération. C'est pendant cette fenêtre de faible cortisol que l'organisme régénère ses tissus, consolide la mémoire et restaure ses défenses immunitaires.</p>
+
+        <h2>Faut-il consommer du café dès le réveil ?</h2>
+
+        <p>C'est la question qui a fait le tour des podcasts de santé ces dernières années. La réponse qu'on entend partout : non, il faut attendre 90 minutes. Mais la réponse que donne la science est plus nuancée.</p>
+
+        <p>La règle des « 90 à 120 minutes après le réveil » est associée principalement au podcast d'Andrew Huberman (Stanford, 2021). Elle s'appuie sur un raisonnement biologique en apparence cohérent : si l'on boit du café au moment où le cortisol est déjà à son pic, on perturberait un mécanisme naturel d'éveil, tout en développant une tolérance accélérée à la caféine. Le problème est qu'<strong>aucune étude évaluée par les pairs n'a jamais testé directement cette hypothèse chez l'humain.</strong> Il s'agit d'une inférence, non d'un résultat expérimental.</p>
+
+        <p>Pire : les essais sur la performance cognitive contrediraient cette logique. Sherman et al. (<em>Frontiers in Psychology</em>, 2016) ont montré que la caféine améliore davantage la mémoire le matin que l'après-midi. Mora-Rodríguez et al. (<em>PLoS ONE</em>, 2012) ont démontré que la caféine matinale compense le creux de performance neuromusculaire observé chez les athlètes entraînés. Une revue narrative récente (<em>Nutrients</em>, 2024) conclut que la caféine est précisément la plus utile pour contrer le creux énergétique des premières heures.</p>
+
+        <p>En d'autres termes, le matin est peut-être le moment où elle est le plus nécessaire.</p>
+
+        <h2>Ce que la biologie dit vraiment de la CAR</h2>
+
+        <p>La Cortisol Awakening Response a longtemps été présentée comme un événement discret, déclenché par l'acte de se réveiller. Deux publications de 2025 remettent ce modèle en question.</p>
+
+        <p>La revue de référence de <strong>Stalder, Oster, Abelson et Clow</strong> (<em>Endocrine Reviews</em>, 2025) actualise le mécanisme : la CAR serait commandée à la fois par la voie classique noyau suprachiasmatique-PVN-axe HPA et par une voie sympathique extra-pituitaire augmentant la sensibilité surrénalienne à l'ACTH au réveil. Mais <strong>Klaas et al.</strong> (<em>Proceedings of the Royal Society B</em>, 2025), à partir d'une microdialyse ambulatoire automatisée chez 201 adultes à domicile, n'ont trouvé aucune différence entre le taux de sécrétion cortisolaire dans l'heure suivant le réveil et celui de l'heure précédente. Leur interprétation : la montée matinale serait la simple continuation du rythme circadien, non un phénomène spécifique au réveil.</p>
+
+        <p>Ce résultat est encore débattu. Le commentaire de Velazquez Sanchez et Dalley (<em>Brain and Neuroscience Advances</em>, 2025), intitulé <em>« Cortisol awakening response : Fact or fiction ? »</em>, appelle à la prudence avant toute révision définitive. Il reste que si ce résultat se confirme, l'argument principal pour différer le premier café perdrait sa substance biologique.</p>
+
+        <h2>Caféine et cortisol : le mécanisme d'interaction</h2>
+
+        <p>La caféine agit sur l'axe hypothalamo-hypophyso-surrénalien (HPA) par une voie indirecte. En bloquant les récepteurs adénosinergiques A1 et A2A dans l'hypothalamus, elle lève l'inhibition tonique sur les neurones à CRH du noyau paraventriculaire, ce qui déclenche la cascade CRH → ACTH → cortisol surrénalien (Patz et al., <em>Pharmacology, Biochemistry and Behavior</em>, 2006). À doses physiologiques, l'action reste strictement centrale ; les effets directs sur l'hypophyse ou la surrénale n'apparaissent qu'à des concentrations toxiques jamais atteintes par voie orale.</p>
+
+        <p><strong>Lovallo et al.</strong> (<em>Psychosomatic Medicine</em>, 2005) ont conduit l'essai de référence sur ce sujet : un croisé en double aveugle chez 96 adultes a montré que 250 mg de caféine, trois fois par jour pendant cinq jours, élevait le cortisol salivaire de façon mesurable malgré la prise répétée. Autrement dit, la tolérance est partielle, pas totale.</p>
+
+        <p>Une étude plus récente complique le tableau. <strong>Wallace et al.</strong> (<em>Psychosomatic Medicine</em>, 2024) ont rapporté, dans deux cohortes indépendantes, que les consommateurs habituels présentent une réactivité cortisolaire <em>accrue</em> au stress de laboratoire (Trier Social Stress Test). Ce résultat, contre-intuitif, suggèrerait que la caféine chronique sensibilise l'axe HPA au stress plutôt qu'elle ne l'émousse. La revue 2025 d'<em>Endocrine Abstracts</em> (ECEESPE2025) confirme par ailleurs que parmi les boissons caféinées, le café produit la plus forte élévation cortisolaire, la L-théanine présente dans le thé atténuant cet effet.</p>
+
+        <p>En résumé : le café augmente le cortisol. Mais boire au pic cortisolaire du matin accélère-t-il vraiment la tolérance à la caféine ? Cette hypothèse reste, à ce jour, sans confirmation expérimentale chez l'humain.</p>
+
+        <h2>Le vrai impératif : l'heure du dernier café</h2>
+
+        <p>Là où la littérature s'accorde sans ambiguïté, c'est sur le soir.</p>
+
+        <p><strong>Drake et al.</strong> (<em>Journal of Clinical Sleep Medicine</em>, 2013) ont établi en double aveugle que 400 mg de caféine, même pris six heures avant le coucher, retranchaient plus d'une heure au sommeil objectif. Six heures. Ce chiffre est resté longtemps le seuil de référence.</p>
+
+        <p>Il est désormais dépassé. La méta-analyse de <strong>Gardiner et al.</strong> (<em>Sleep Medicine Reviews</em>, 2023), portant sur 24 études, quantifie précisément l'effet : la caféine réduit le temps de sommeil total de 45 minutes, l'efficience de 7 %, et le sommeil lent profond (N3) de 11,4 minutes. Les seuils opérationnels qu'ils dégagent, pour préserver intégralement le temps de sommeil, sont de <strong>8,8 heures avant le coucher pour un café standard (environ 107 mg)</strong> et de <strong>13,2 heures pour un pré-workout dosé à 217 mg</strong>. L'essai Weibel et al. (<em>SLEEP</em>, 2025), avec polysomnographie, confirme : 100 mg jusqu'à 4 heures avant le coucher restent acceptables, mais 400 mg dans les 12 heures fragmentent l'architecture du sommeil de façon mesurable.</p>
+
+        <p>Et ce n'est pas qu'une question de durée. <strong>Burke et al.</strong> (<em>Science Translational Medicine</em>, 2015) ont montré qu'un double espresso (environ 200 mg) pris trois heures avant le coucher décale l'apparition de la mélatonine de 40 minutes, repoussant l'horloge moléculaire elle-même.</p>
+
+        <p><strong>La lecture pratique est donc la suivante</strong> : pour un coucher à 23 h, dernier café significatif vers 14 h-15 h. Pour des doses faibles (100 mg), la tolérance peut aller jusqu'à 17 h chez les métaboliseurs rapides.</p>
+
+        <h2>La demi-vie de la caféine : un paramètre individuel, pas universel</h2>
+
+        <p>La pharmacocinétique de la caféine est trompeuse. La demi-vie moyenne est de 4 à 6 heures, mais cette moyenne masque une variabilité interindividuelle considérable.</p>
+
+        <p>Le polymorphisme du gène <strong>CYP1A2</strong>, qui code l'enzyme hépatique principal du métabolisme caféinique, crée des écarts de l'ordre de quatre à cinq fois entre individus (Grzegorzewski et al., <em>Frontiers in Pharmacology</em>, 2022). Le tabac accélère le métabolisme (demi-vie réduite à environ 3,5 heures) ; la grossesse au troisième trimestre l'allonge jusqu'à 10,5 heures ; les contraceptifs oraux estroprogestatifs le doublent presque. Une consommatrice sous pilule qui boit un café à 16 h peut donc maintenir des concentrations actives jusqu'à 2 h du matin.</p>
+
+        <p>Ce paramètre individuel est la raison pour laquelle les seuils horaires ne peuvent être qu'indicatifs. Connaître grossièrement son profil métabolique, en observant le temps nécessaire pour ressentir les effets et le délai avant qu'ils ne s'estompent, est un outil de calibration accessible à tout consommateur.</p>
+
+        <h2>La tolérance : ce qui se passe dans le cerveau</h2>
+
+        <p>La caféine n'agit, aux concentrations atteintes par la consommation ordinaire (1 à 10 µM), que comme antagoniste compétitif des récepteurs adénosinergiques A1 et A2A (Fredholm et al., <em>Pharmacological Reviews</em>, 1999). Les autres mécanismes souvent cités, comme l'inhibition des phosphodiestérases ou la libération calcique par les récepteurs ryanodine, requièrent des concentrations supérieures à 100 µM, jamais atteintes par voie orale.</p>
+
+        <p>L'adénosine est un métabolite qui s'accumule dans le cerveau au fil des heures d'éveil, créant la pression de sommeil. En bloquant ses récepteurs, la caféine donne l'impression d'être reposé sans l'être vraiment. C'est précisément ce qui rend l'usage chronique problématique : la dette de sommeil s'accumule en silence, masquée par la caféine.</p>
+
+        <p>L'usage chronique entraîne une régulation à la hausse de la densité des récepteurs A1 (Fredholm, 1982 ; Johansson et al., <em>Brain Research</em>, 1997). Le cerveau compense en créant davantage de points d'ancrage pour l'adénosine, ce qui explique pourquoi il faut progressivement augmenter les doses pour obtenir le même effet. La tolérance subjective à l'éveil s'installe en 1 à 4 jours ; celle aux effets cardiovasculaires en quelques jours, mais reste partielle pour la pression artérielle.</p>
+
+        <p>Le « reset » de la tolérance est généralement estimé à <strong>7 à 14 jours</strong> d'abstinence complète, sur la base d'études animales et d'observations cliniques. Lin et al. (<em>Cerebral Cortex</em>, 2021) ont objectivé, par IRM, des changements de plasticité cérébrale après 10 jours de consommation, partiellement réversibles à l'arrêt.</p>
+
+        <p>Le sevrage suit un calendrier bien documenté par <strong>Juliano et Griffiths</strong> (<em>Psychopharmacology</em>, 2004) : céphalée vasodilatatoire apparaissant à 12-24 heures, pic à 20-51 heures, résolution sur 2 à 9 jours. L'incidence est d'environ 50 % chez les consommateurs réguliers. Ces symptômes sont désormais codifiés dans le DSM-5 sous l'intitulé <em>Caffeine Withdrawal</em>.</p>
+
+        <h2>Doses de sécurité : ce que disent les autorités sanitaires</h2>
+
+        <p>Il n'y a pas une réponse, mais plusieurs, selon l'organisme consulté.</p>
+
+        <p><strong>L'EFSA</strong> (Autorité européenne de sécurité des aliments, <em>EFSA Journal</em>, 2015) fixe les seuils suivants : 400 mg par jour pour l'adulte sain, 200 mg en dose unique (soit 3 mg/kg), 200 mg par jour pour la femme enceinte ou allaitante, et 3 mg/kg par jour pour l'enfant et l'adolescent.</p>
+
+        <p><strong>La FDA américaine et Santé Canada</strong> s'alignent sur 400 mg pour l'adulte. Santé Canada détaille des paliers pédiatriques précis (45 mg de 4 à 6 ans, 62,5 mg de 7 à 9 ans, 85 mg de 10 à 12 ans).</p>
+
+        <p><strong>L'ANSES</strong> française adopte une posture sensiblement plus prudente : sans seuil chiffré pour la population générale, elle recommande de « modérer » la consommation. Elle identifie comme groupes à risque les femmes enceintes, les enfants et adolescents, les personnes souffrant de troubles cardiovasculaires (arythmies, hypertension), psychiatriques (anxiété) ou rénaux. La combinaison caféine et alcool, et caféine et exercice intense, fait l'objet d'une mise en garde spécifique.</p>
+
+        <p>Pour un lecteur français, ce différentiel EFSA/ANSES mérite d'être mentionné tel quel : la science sous-jacente est commune, mais l'arbitrage de précaution diverge.</p>
+
+        <p>À titre indicatif, un espresso standard contient 60 à 80 mg de caféine, un café filtre 80 à 120 mg, une boisson énergisante 80 mg pour 250 mL.</p>
+
+        <h2>Risques réels : ce qu'il faut savoir</h2>
+
+        <p><strong>Le sommeil.</strong> C'est l'effet indésirable le mieux établi, et de loin. Clark et Landolt (<em>Sleep Medicine Reviews</em>, 2017) ont synthétisé la littérature : la caféine en soirée réduit la durée totale, l'efficience et la proportion de sommeil profond, avec des conséquences fonctionnelles le lendemain.</p>
+
+        <p><strong>L'anxiété.</strong> Elle est modulée par le génotype ADORA2A. Le polymorphisme rs5751876 prédit la réponse anxiogène à 150 mg de caféine (Childs et al., <em>Neuropsychopharmacology</em>, 2008). Certaines personnes développent des attaques de panique et des palpitations à des doses que d'autres tolèrent sans difficultés. Ce n'est pas une question de faiblesse, c'est une question de génétique.</p>
+
+        <p><strong>La pression artérielle.</strong> La caféine provoque une élévation aiguë de l'ordre de 8 mmHg systolique pour 200 à 300 mg (Mesas et al., <em>American Journal of Clinical Nutrition</em>, 2011). Paradoxalement, la tolérance chronique atténue cet effet chez la plupart des consommateurs réguliers, et les méta-analyses à long terme retrouvent un effet cardiovasculaire neutre, voire protecteur, à doses modérées.</p>
+
+        <p><strong>Les arythmies.</strong> Le récit scientifique a changé sur ce point. L'essai <strong>CRAVE</strong> (Marcus et al., <em>New England Journal of Medicine</em>, 2023), premier essai randomisé avec ECG continu en conditions ambulatoires, montre que le café caféiné n'augmente pas les arythmies auriculaires, mais accroît d'environ 50 % les extrasystoles ventriculaires, dont la signification clinique reste incertaine. L'analyse de randomisation mendélienne sur 386 258 sujets de la UK Biobank (Kim et al., <em>JAMA Internal Medicine</em>, 2021) ne retrouve aucun lien causal avec les tachyarythmies.</p>
+
+        <p><strong>Les interactions médicamenteuses.</strong> La ciprofloxacine inhibe le CYP1A2 et peut réduire la clairance caféinique de 84 %. Les contraceptifs oraux estroprogestatifs doublent la demi-vie. La caféine élève les concentrations plasmatiques de théophylline et de clozapine. L'interaction avec le lithium mérite une attention particulière : la caféine augmente la clairance rénale du lithium, et un sevrage brutal peut déclencher une intoxication lithique chez un patient stabilisé.</p>
+
+        <p><strong>L'intoxication aiguë.</strong> Elle débute vers 1 g (tachycardie, agitation, nausées), devient sévère au-delà de 1,2 g (convulsions, arythmies ventriculaires). La dose létale chez l'adulte est généralement estimée à 5 à 10 g (Willson, <em>Toxicology Reports</em>, 2018), ce qui correspond à 50 à 100 expressos ingérés rapidement. En pratique, ce risque ne concerne que les compléments de caféine pure ou les boissons énergisantes consommées en quantités massives.</p>
+
+        <h2>Les bénéfices à long terme : le dossier le plus solide</h2>
+
+        <p>C'est peut-être ce que le consommateur soucieux de sa santé est le moins prêt à entendre.</p>
+
+        <p>La consommation modérée de café est associée à une réduction de la mortalité toutes causes d'environ 15 %. La revue parapluie de <strong>Poole et al.</strong> (<em>BMJ</em>, 2017), portant sur 201 méta-analyses évaluant 67 critères de santé, a établi une relation en J ou en U : le bénéfice est maximal autour de 3 à 4 tasses par jour. Kim, Je et Giovannucci (<em>European Journal of Epidemiology</em>, 2019) confirment ce signal sur 3,85 millions de sujets (RR mortalité totale 0,85 à 3,5 tasses/jour). Fait notable : <strong>le bénéfice sur la mortalité s'observe aussi avec le café décaféiné</strong> (Loftfield et al., <em>JAMA Internal Medicine</em>, 2018, UK Biobank, n = 498 134), ce qui suggère que les actifs protecteurs ne se résument pas à la caféine.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Pathologie</th>
+                    <th>Effet documenté (3-4 tasses/jour)</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Diabète de type 2</td>
+                    <td>Réduction ~25-30 %</td>
+                    <td>Ding et al., <em>Diabetes Care</em>, 2014</td>
+                </tr>
+                <tr>
+                    <td>Maladie de Parkinson</td>
+                    <td>HR 0,80</td>
+                    <td>Hong et al., <em>Nutrients</em>, 2020</td>
+                </tr>
+                <tr>
+                    <td>Carcinome hépatocellulaire</td>
+                    <td>RR 0,65 par 2 tasses</td>
+                    <td>Kennedy et al., <em>BMJ Open</em>, 2017</td>
+                </tr>
+                <tr>
+                    <td>Cirrhose</td>
+                    <td>RR 0,56 par 2 tasses</td>
+                    <td>Kennedy et al., <em>Alimentary Pharmacol Ther</em>, 2016</td>
+                </tr>
+                <tr>
+                    <td>Cancer de l'endomètre</td>
+                    <td>RR 0,79</td>
+                    <td>Lukic et al., <em>Nutrients</em>, 2018</td>
+                </tr>
+                <tr>
+                    <td>Dépression</td>
+                    <td>RR 0,76</td>
+                    <td>Grosso et al., <em>Molecular Nutrition &amp; Food Research</em>, 2016</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Pour le diabète de type 2, les acides chlorogéniques inhibent l'absorption intestinale du glucose et améliorent la sensibilité hépatique à l'insuline, ce qui explique l'effet conservé du décaféiné. Pour la maladie de Parkinson, c'est l'antagonisme A2A qui prime : cette cible pharmacologique a été validée par l'approbation de l'istradéfylline comme traitement adjuvant aux États-Unis. Pour le foie, les diterpènes (cafestol, kahweol) exercent un effet anti-fibrotique sur les cellules stellaires hépatiques, combiné à l'antagonisme A2A, ce qui explique le signal observé même chez les patients déjà atteints de stéatohépatite non alcoolique (Hayat et al., <em>Annals of Hepatology</em>, 2021 : RR 0,65 pour la fibrose).</p>
+
+        <p><strong>Deux nuances pratiques.</strong> Le café non filtré (cafetière à piston, café bouilli, café turc) élève le LDL de 10 à 15 mg/dL via ces mêmes diterpènes, neutralisant partiellement le gain cardiovasculaire chez les sujets hyperlipidémiques. Et la maladie d'Alzheimer fait exception à l'image protectrice générale : la méta-analyse dose-réponse de Larsson et Orsini (<em>Nutrients</em>, 2018) retrouve un RR de 1,01 par tasse supplémentaire, soit un signal nul.</p>
+
+        <h2>Ce que le CIRC dit du café et du cancer</h2>
+
+        <p>En 2016, le Centre international de recherche sur le cancer (CIRC/IARC) a reclassé le café du Groupe 2B (« peut-être cancérogène ») vers le <strong>Groupe 3</strong> (non classifiable quant à sa cancérogénicité) (Loomis et al., <em>The Lancet Oncology</em>, 2016). En d'autres termes, aucune preuve ne permet d'incriminer le café dans la genèse de cancers. En revanche, le CIRC maintient en Groupe 2A les <strong>boissons très chaudes consommées à plus de 65 °C</strong>, ce qui concerne le thé bouillant ou le maté, et non le café en lui-même.</p>
+
+        <h2>Synthèse : la zone de consommation idéale</h2>
+
+        <p>Trois conclusions se dégagent de la littérature 2015-2025.</p>
+
+        <p><strong>Premièrement</strong>, retarder le café de 90 à 120 minutes après le réveil ne repose sur aucun essai clinique. Les données de performance suggèrent même que le matin est la fenêtre où la caféine est la plus utile, précisément parce que le creux énergétique y est le plus accentué. Cette règle peut rester un choix personnel, mais elle ne devrait pas être présentée comme une nécessité biologique.</p>
+
+        <p><strong>Deuxièmement</strong>, le seul impératif horaire solidement documenté est la limite vespérale. Pour préserver l'architecture du sommeil, la dernière prise devrait se situer <strong>au moins 8,8 heures avant le coucher</strong>, soit vers 14 h-15 h pour un coucher à 23 h. Cette fenêtre se resserre pour les métaboliseurs lents (pilule contraceptive, insuffisance hépatique, tabac) et s'élargit pour les métaboliseurs rapides.</p>
+
+        <p><strong>Troisièmement</strong>, la dose quotidienne sûre se situe autour de 400 mg pour l'adulte sain (EFSA, FDA, Santé Canada), soit 4 à 5 expressos ou 3 à 4 cafés filtre. Cette dose correspond précisément à la fenêtre associée au nadir de mortalité dans les grandes études de cohorte.</p>
+
+        <p><strong>La zone idéale se dessine donc comme suit : café le matin dès le réveil si désiré, réparti sur la matinée et le début d'après-midi, arrêt aux alentours de 14 h-15 h, et dans la limite de 400 mg par jour.</strong> Le reste est affaire de variabilité individuelle.</p>
+
+        <div class="bibliography">
+            <h2>Bibliographie</h2>
+
+            <h3>Cortisol et caféine</h3>
+            <ul>
+                <li>Gavrieli, A., Yannakoulia, M., Fragopoulou, E., et al. (2011). Caffeinated coffee does not acutely affect energy intake, appetite, or inflammation but prevents serum cortisol concentrations from falling in healthy men. <em>The Journal of Nutrition</em>, 141(4), 703–707.</li>
+                <li>Lovallo, W.R., Whitsett, T.L., al'Absi, M., et al. (2005). Caffeine stimulation of cortisol secretion across the waking hours in relation to caffeine intake levels. <em>Psychosomatic Medicine</em>, 67(5), 734–739.</li>
+                <li>Patz, M.D., Ward, K., Bhatt, S., et al. (2006). Modulation of the hypothalamo-pituitary-adrenocortical axis by caffeine. <em>Pharmacology, Biochemistry and Behavior</em>, 82(3), 537–541.</li>
+                <li>Wallace, K.L., et al. (2024). Habitual caffeine use is associated with heightened cortisol reactivity to lab-based stress in two samples. <em>Psychosomatic Medicine</em>.</li>
+                <li>Endocrine Abstracts ECEESPE2025 - P151 : Cortisol response to coffee, tea, and caffeinated drinks : A comparative review of studies.</li>
+            </ul>
+
+            <h3>Rythme circadien et Cortisol Awakening Response</h3>
+            <ul>
+                <li>Stalder, T., Kirschbaum, C., Kudielka, B.M., et al. (2016). Assessment of the cortisol awakening response: Expert consensus guidelines. <em>Psychoneuroendocrinology</em>, 63, 414–432.</li>
+                <li>Stalder, T., Oster, H., Abelson, J., Clow, A. (2025). The cortisol awakening response. <em>Endocrine Reviews</em>, 46, 43–59.</li>
+                <li>Klaas, V.C., et al. (2025). Awakening not associated with an increased rate of cortisol secretion. <em>Proceedings of the Royal Society B</em>.</li>
+                <li>Velazquez Sanchez, E., Dalley, J. (2025). Cortisol awakening response : Fact or fiction? <em>Brain and Neuroscience Advances</em>.</li>
+            </ul>
+
+            <h3>Timing de la caféine et sommeil</h3>
+            <ul>
+                <li>Drake, C., Roehrs, T., Shambroom, J., Roth, T. (2013). Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. <em>Journal of Clinical Sleep Medicine</em>, 9(11), 1195–1200.</li>
+                <li>Gardiner, C., et al. (2023). The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. <em>Sleep Medicine Reviews</em>, 69, 101764.</li>
+                <li>Weibel, J., et al. (2025). Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial. <em>SLEEP</em>.</li>
+                <li>Burke, T.M., Markwald, R.R., McHill, A.W., et al. (2015). Effects of caffeine on the human circadian clock in vivo and in vitro. <em>Science Translational Medicine</em>, 7(305), 305ra146.</li>
+                <li>Mora-Rodríguez, R., et al. (2012). Caffeine ingestion reverses the circadian rhythm effects on neuromuscular performance in highly resistance-trained men. <em>PLOS ONE</em>, 7(4).</li>
+                <li>Sherman, S.M., et al. (2016). Coffee consumption enhances high-level cognitive function. <em>Frontiers in Psychology</em>, 7.</li>
+            </ul>
+
+            <h3>Pharmacocinétique et génétique</h3>
+            <ul>
+                <li>Fredholm, B.B., Bättig, K., Holmén, J., et al. (1999). Actions of caffeine in the brain with special reference to factors that contribute to its widespread use. <em>Pharmacological Reviews</em>, 51(1), 83–133.</li>
+                <li>Grzegorzewski, J., et al. (2022). Pharmacokinetics of caffeine: A systematic analysis of reported data for application in metabolic phenotyping. <em>Frontiers in Pharmacology</em>.</li>
+                <li>Lin, Y.K., et al. (2021). Gray matter changes after short-term caffeine use. <em>Cerebral Cortex</em>.</li>
+            </ul>
+
+            <h3>Tolérance et sevrage</h3>
+            <ul>
+                <li>Juliano, L.M., Griffiths, R.R. (2004). A critical review of caffeine withdrawal: empirical validation of symptoms and signs, incidence, severity, and associated features. <em>Psychopharmacology</em>, 176(1), 1–29.</li>
+                <li>American Psychiatric Association (2013). <em>Diagnostic and Statistical Manual of Mental Disorders</em> (5th ed.). DSM-5 : Caffeine Withdrawal.</li>
+            </ul>
+
+            <h3>Recommandations officielles</h3>
+            <ul>
+                <li>EFSA Panel on Dietetic Products, Nutrition and Allergies. (2015). Scientific Opinion on the safety of caffeine. <em>EFSA Journal</em>, 13(5), 4102.</li>
+                <li>Santé Canada (2012). Summary of the basis of Health Canada's decision to allow the use of caffeine in carbonated soft drinks.</li>
+            </ul>
+
+            <h3>Risques cardiovasculaires et interactions</h3>
+            <ul>
+                <li>Mesas, A.E., Leon-Muñoz, L.M., Rodriguez-Artalejo, F., Lopez-Garcia, E. (2011). The effect of coffee on blood pressure and cardiovascular disease in hypertensive individuals. <em>American Journal of Clinical Nutrition</em>, 94(4), 1113–1126.</li>
+                <li>Childs, E., de Wit, H. (2008). Enhanced mood and psychomotor performance by a caffeine-containing energy capsule in fatigued individuals. <em>Neuropsychopharmacology</em>.</li>
+                <li>Marcus, G.M., et al. (2023). Acute Effects of Coffee Consumption on Health among Ambulatory Adults (CRAVE Trial). <em>New England Journal of Medicine</em>.</li>
+                <li>Kim, E.J., et al. (2021). Association of coffee consumption with cardiovascular disease. <em>JAMA Internal Medicine</em>.</li>
+                <li>Willson, N.J. (2018). Caffeine intoxication: Unregulated, over-the-counter sale of potentially deadly supplements. <em>Toxicology Reports</em>.</li>
+            </ul>
+
+            <h3>Bénéfices à long terme</h3>
+            <ul>
+                <li>Poole, R., Kennedy, O.J., Roderick, P., et al. (2017). Coffee consumption and health: umbrella review of meta-analyses of multiple health outcomes. <em>BMJ</em>, 359, j5024.</li>
+                <li>Kim, Y., Je, Y., Giovannucci, E. (2019). Coffee consumption and all-cause and cause-specific mortality: a meta-analysis. <em>European Journal of Epidemiology</em>.</li>
+                <li>Loftfield, E., et al. (2018). Association of coffee drinking with mortality by genetic variation in caffeine metabolism. <em>JAMA Internal Medicine</em>, 178(8), 1086–1097.</li>
+                <li>Ding, M., et al. (2014). Caffeinated and decaffeinated coffee consumption and risk of type 2 diabetes. <em>Diabetes Care</em>, 37(2), 569–586.</li>
+                <li>Hong, C.T., et al. (2020). Caffeine's effect on Parkinson's disease. <em>Nutrients</em>, 12(6), 1860.</li>
+                <li>Kennedy, O.J., et al. (2017). All coffee types decrease the risk of adverse clinical outcomes in chronic liver disease. <em>BMJ Open</em>.</li>
+                <li>Kennedy, O.J., et al. (2016). Systematic review with meta-analysis: coffee consumption and the risk of cirrhosis. <em>Alimentary Pharmacology &amp; Therapeutics</em>.</li>
+                <li>Lukic, M., et al. (2018). Coffee and endometrial cancer. <em>Nutrients</em>.</li>
+                <li>Grosso, G., et al. (2016). Coffee, tea, caffeine and risk of depression. <em>Molecular Nutrition &amp; Food Research</em>.</li>
+                <li>Larsson, S.C., Orsini, N. (2018). Coffee consumption and risk of dementia and Alzheimer's disease. <em>Nutrients</em>.</li>
+                <li>Hayat, U., et al. (2021). Effect of coffee consumption on NAFLD incidence, prevalence and risk of significant liver fibrosis. <em>Annals of Hepatology</em>.</li>
+            </ul>
+
+            <h3>Cancer</h3>
+            <ul>
+                <li>Loomis, D., et al. (2016). Carcinogenicity of drinking coffee, mate, and very hot beverages. <em>The Lancet Oncology</em>, 17(7), 877–878.</li>
+            </ul>
+        </div>
+
+    </article>
+
+    <div class="article-nav">
+        <a href="../articles.html">&larr; Tous les articles</a>
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../articles.html">Articles</a></li>
+            <li><a href="../locations.html">Parcours</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <span>Raphaël Bousbia &mdash; 2026</span>
+    </footer>
+
+</body>
+</html>
